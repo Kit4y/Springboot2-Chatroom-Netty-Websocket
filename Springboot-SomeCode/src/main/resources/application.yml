@@ -1,0 +1,40 @@
+swagger:
+  title: Kitty's Easy Spring Boot Swagger
+  description: I Am Kitty Too
+  version: 1.0.0
+  name: Kitty
+
+
+#server:
+#  port: 5000
+#  servlet:
+#   context-path: /kitty 默认初始位置
+
+#修改端口号 多配置文件
+spring:
+  profiles:
+    active: dev
+
+
+#下面这样也可以
+#server:
+#  port: 8081
+#spring:
+#  profiles: prod
+#---
+#server:
+#  port: 8080
+#spring:
+#  profiles: dev
+#---
+#spring:
+#  profiles:
+#    active: prod
+
+#1、在配置文件中指定 spring.profiles.active=dev
+#
+#​ 2、命令行：
+#
+#​ java -jar ***.jar –spring.profiles.active=dev
+#
+#​ 可以直接在测试的时候，配置传入命令行参数
